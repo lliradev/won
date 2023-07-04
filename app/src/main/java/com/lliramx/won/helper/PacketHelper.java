@@ -42,6 +42,7 @@ public class PacketHelper {
 
             InetAddress address = InetAddress.getByName(ipAddress);
             DatagramPacket packet = new DatagramPacket(bytes, bytes.length, address, port);
+            // @TODO: Improve
             DatagramSocket socket = new DatagramSocket();
             socket.send(packet);
             socket.close();

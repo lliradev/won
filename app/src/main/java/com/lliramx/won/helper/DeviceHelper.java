@@ -12,7 +12,7 @@ public class DeviceHelper {
 
     public static List<Device> retrieveDevices() {
         List<Device> devices = new ArrayList<>();
-        devices.add(new Device(1L, "Acer Ethernet", "192.168.0.12",
+        devices.add(new Device(1L, "Acer Ethernet", "192.168.0.255",
             "A8-1E-84-34-68-04", "DESKTOP-ROHTTE2"));
         return devices;
     }

@@ -4,13 +4,13 @@ public class Device {
     private final Long id;
     private final String alias;
     private final String hostname;
-    private final String ipAddress;
+    private final String broadcastAddress;
     private final String macAddress;
 
-    public Device(Long id, String alias, String ipAddress, String macAddress, String hostname) {
+    public Device(Long id, String alias, String broadcastAddress, String macAddress, String hostname) {
         this.id = id;
         this.alias = alias;
-        this.ipAddress = ipAddress;
+        this.broadcastAddress = broadcastAddress;
         this.macAddress = macAddress;
         this.hostname = hostname;
     }
@@ -19,8 +19,8 @@ public class Device {
         return alias;
     }
 
-    public String getIpAddress() {
-        return ipAddress;
+    public String getBroadcastAddress() {
+        return broadcastAddress;
     }
 
     public String getMacAddress() {

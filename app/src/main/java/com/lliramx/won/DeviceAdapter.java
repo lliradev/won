@@ -73,7 +73,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder
             power.setOnClickListener(v -> {
                 Thread thread = new Thread(() -> {
                     PacketHelper packetHelper = new PacketHelper(context);
-                    packetHelper.send(item.getIpAddress(), item.getMacAddress(), item.getPort());
+                    packetHelper.send(item.getBroadcastAddress(), item.getMacAddress(), item.getPort());
                 });
                 thread.start();
                 alert.show("Success", "Wake-on-LAN packet sent.");
