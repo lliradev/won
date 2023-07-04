@@ -3,4 +3,5 @@
     <string name="ip_address">IP Address</string>
     <string name="mac_address">MAC Address</string>
     <string name="wake_on_lan">Wake On Lan</string>
+    <string name="devices">Devices</string>
 </resources>
